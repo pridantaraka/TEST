@@ -7,7 +7,7 @@
         const source = [
                     {
                     id: "1",
-                    data: {
+                    name: {
                         first_name: "Rian",
                         last_name: "Nugraha"
                     },
@@ -16,18 +16,18 @@
                         data: "PLMK-JKT"
                     },
                     },
-                    {
-                    id: "2",
-                    full_name: "Ari Santoso",
-                    school: {
-                        id: "1",
-                        short_name: "GRSR",
-                        data: "JKT"
-                    },
-                    },
+                    // {
+                    // id: "2",
+                    // full_name: "Ari Santoso",
+                    // school: {
+                    //     id: "1",
+                    //     short_name: "GRSR",
+                    //     data: "JKT"
+                    // },
+                    // },
                     {
                     id: "3",
-                    data: {
+                    name: {
                         first_name: "Rahman",
                         last_name: "Sunggara"
                     },
@@ -39,7 +39,7 @@
                     },
                     {
                         id: "4",
-                        data: {
+                        name: {
                             first_name: "Rian",
                             last_name: "Nugraha"
                         },
@@ -50,13 +50,16 @@
                     },
                 ]
                 
-                // function result(num){
-                //     // for(var i = 0 ; i < 5 ; i++){
-                //         return 
-                //     // }
-                // }
+                function result(num){
+                    var a ="";
+                    var i = 0;
+                    for(i; i < num ; i++){
+                        a += source[i].id+ ". "+ "Name : " + source[i].name.first_name + " " + source[i].name.last_name + " School :"+ source[i].school.data +'\n';
+                    }
+                    return a;
+                }
 
-                document.write(source.data.first_name + " " + source.data.last_name + " School_Name: " + source.school.data; );
+                console.log(result(3));
         </script>
     </body>
 </html>

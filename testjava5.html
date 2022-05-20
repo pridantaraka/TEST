@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const users = [{
+            user_id: "1", name: "Bagas", department: "Frontend", school: "PLMK", school_id : "1"}, 
+            {user_id: "2", name: "Faisal", department: "Frontend", school: "PLMI", school_id : "2"}, 
+            {user_id: "3", name: "Surya",  department: "Backend", school: "PLN", school_id : "3"}, 
+            {user_id: "4", name: "Ari",  department: "Backend", school: "PTN", school_id : "4"}]
+
+            function resultDev(data) {
+
+                for(var i = 0; i < users.length ; i++){
+                data += users[i].user_id;
+            }
+                return users;
+            }
+
+            console.log(resultDev(users));
+    </script>
+</body>
+</html>
